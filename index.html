@@ -1,20 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>МИГ бот</title>
-    <style>
-        img {
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>МИГ фото в два клика</title>
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="favicon.ico" rel="icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="МИГ - сервис по отправке фото вашим родным и близким. С помощью нашего чат-бота ты можешь распечатать, упаковать и отправить фотографии значимым тебе людям в пару кликов, а при желании даже создать целый фотоальбом, подарив настоящие и искренние чувства!">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preload" href="font/BwModelicaCyrillicDEMO-Black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="font/BwModelicaCyrillicDEMO-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="font/BwModelicaCyrillicDEMO-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="font/BwModelicaCyrillicDEMO-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="font/BwModelicaCyrillicDEMO-Regular.woff" as="font" type="font/woff" crossorigin>
+  <script src="orders/itc-slider.js" defer></script>
 </head>
 <body>
-  <img src="./img/сайт.png" alt="сайт">
+  <header>
+    <section class="menu">
+        <img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ">
+
+        <ul class="menu__items">
+          <li class="menu__item">
+            О нас
+          </li>
+          <li class="menu__item">
+            Фото
+          <li class="menu__item">
+            Альбомы
+          </li>
+          <li class="menu__item">
+            Отзывы
+          </li>
+          <li class="menu__item">
+            Заказать
+          </li>
+        </ul>
+    </section>
+  </header>
+  <main>
+    <section class="teaser">
+      <div class="container">
+        <div class="teaser__items">
+          <div class="teaser__left">
+            <div class="teaser__texts">
+              <h1>
+                Сервис по отправке фото родным и близким
+              </h1>
+              <p class="teaser__text">
+                Подари настоящие и искренние чувства!
+              </p>
+            </div>
+            <button class="teaser__order">
+              <span>
+                Заказать
+              </span>
+              <img src="teaser/img/arrow.png" alt="arrow">
+            </button>
+          </div>
+          <div class="teaser__right">
+            <img src="./teaser/img/group.png" alt="photo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <div class="team__items">
+          <div class="team__left">
+            <img src="team/img/team.png" alt="team">
+          </div>
+          <div class="team__right">
+            <h2>
+            <span class="team__block">
+              Привет!
+            </span>
+              <span>
+              Мы — Никита и Артем
+            </span>
+            </h2>
+            <p class="team__text">
+              <span class="team__block">
+                Наша миссия – сохранить трепетные воспоминания в альбомах и фотографиях.
+              </span>
+              <span class="team__block">
+                А главное сделать это <span class="team__text-underline">быстро, надёжно и удобно</span>. Не выходи из дома, не иди в типографию, не стой в очереди на почте.
+              </span>
+              <span class="team__block">
+                Наш путь начался недавно, но уже сейчас мы готовы помочь сделать приносить эмоции Вашим родным и близким.
+              </span>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <div class="work__items">
+          <div class="work__left">
+            <h2>
+              Как это работает?
+            </h2>
+            <p class="work__text">
+              <span>
+                Мы создали чат-бота, имеющего две основных функции.
+              </span>
+              <span>
+                Ты отправляешь ему фотографии, после чего он их печатает и отправляет в надёжном конверте близкому Вам человеку.
+              </span>
+              <span >
+                Фотографии — слишком просто?
+              </span>
+              <span>
+                Создай фотоальбом! Выбери подпись на обложку, цветовую гамму. Загрузи фотографии. Альбом уже едет в пункт выдачи.
+              </span>
+            </p>
+          </div>
+          <div class="work__right">
+            <img src="./work/img/instruction.png" alt="Как работает чат-бот">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="assortment">
+      <div class="container">
+        <div class="assortment__items">
+          <a href="https://vk.com/mlgchat"><img src="assortment/img/photo.png" alt="Фото"></a>
+          <a href="https://vk.com/mlgchat"><img src="assortment/img/album.png" alt="Альбом"></a>
+        </div>
+      </div>
+    </section>
+    <section class="orders">
+      <div class="container">
+        <div class="orders__items">
+          <div class="orders__slider">
+            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+              <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8770.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8790.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8774.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8767.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8877.png" alt="Фото">
+                  </div>
+                </div>
+              </div>
+              <button class="itc-slider__btn itc-slider__btn_prev"></button>
+              <button class="itc-slider__btn itc-slider__btn_next"></button>
+              <ol class="itc-slider__indicators">
+                <li class="itc-slider__indicator" data-slide-to="0"></li>
+                <li class="itc-slider__indicator" data-slide-to="1"></li>
+                <li class="itc-slider__indicator" data-slide-to="2"></li>
+                <li class="itc-slider__indicator" data-slide-to="3"></li>
+                <li class="itc-slider__indicator" data-slide-to="4"></li>
+              </ol>
+            </div>
+          </div>
+          <button class="teaser__order">
+              <span>
+                Заказать
+              </span>
+            <img src="teaser/img/arrow.png" alt="arrow">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="cheaper">
+      <div class="container">
+        <h2 class="cheaper__text">
+          Дешевле и быстрее, чем в типографии!
+        </h2>
+      </div>
+    </section>
+    <section class="photo">
+      <div class="container">
+        <div class="photo__items">
+          <div class="photo__left">
+            <h2>
+              О качестве фото
+            </h2>
+            <p class="photo__price">
+              Одна фотография - 15 рублей
+            </p>
+            <p>
+              Наш чат-бот распечатает Ваши фото в размере 10x15 за 2 клика
+            </p>
+            <div class="photo__texts">
+              <p>
+              <span>
+                - Автоматически обрежет фотографию, не задевая важные объекты.
+              </span>
+                <span>
+                - Надёжно упакует и отправит Ваши фото на указанный адрес.
+              </span>
+                <span>
+                - Приложит приятную открытку, чтобы дорогой Вам человек улыбнулся.
+              </span>
+                <span>
+                - Матовая фотобумага
+              </span>
+              </p>
+            </div>
+            <button class="teaser__order photo__order">
+              <span>
+                Клик и фото уже в пути
+              </span>
+              <img src="teaser/img/arrow.png" alt="arrow">
+            </button>
+          </div>
+          <div class="photo__right">
+            <img src="photo/img/ph.png" alt="Фото">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="photo">
+      <div class="container">
+        <div class="photo__items">
+          <div class="photo__right">
+            <img src="photo/img/alb.png" alt="Альбом">
+          </div>
+          <div class="photo__left">
+            <h2>
+              О качестве фото
+            </h2>
+            <p class="photo__price">
+              150/руб за 1 разворот (от 12 разворотов)
+            </p>
+            <p>
+              Наш чат-бот начнёт работу над Вашим альбомом в день заказа.
+            </p>
+            <div class="photo__texts">
+              <p>
+                <span>
+                  - Размер фотоальбома 20x20 (разворот 40x40).
+              </span>
+                <span>
+                - Твёрдая книжная обложка в ламинации.
+              </span>
+                <span>
+                - Мелованная бумага 200г/м2, двусторонняя печать.
+              </span>
+              </p>
+            </div>
+            <button class="teaser__order photo__order">
+              <span>
+                Хочу порадовать себя и близких!
+              </span>
+              <img src="teaser/img/arrow.png" alt="arrow">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cheaper">
+      <div class="container">
+        <h2 class="cheaper__text">
+          Конструктор чат-бота позволяет создать фотоальбом с минималистичным дизайном за 60 секунд!
+        </h2>
+      </div>
+    </section>
+    <section class="orders">
+      <div class="container">
+        <h2 class="orders__h2">Отзывы</h2>
+        <div class="orders__items">
+          <div class="orders__slider">
+            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+              <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8770.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8790.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8774.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8767.png" alt="Фото">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="orders/img/IMG_8877.png" alt="Фото">
+                  </div>
+                </div>
+              </div>
+              <button class="itc-slider__btn itc-slider__btn_prev"></button>
+              <button class="itc-slider__btn itc-slider__btn_next"></button>
+              <ol class="itc-slider__indicators">
+                <li class="itc-slider__indicator" data-slide-to="0"></li>
+                <li class="itc-slider__indicator" data-slide-to="1"></li>
+                <li class="itc-slider__indicator" data-slide-to="2"></li>
+                <li class="itc-slider__indicator" data-slide-to="3"></li>
+                <li class="itc-slider__indicator" data-slide-to="4"></li>
+              </ol>
+            </div>
+          </div>
+          <button class="teaser__order orders__reviews">
+              <span>
+                Убедили, заказываю
+              </span>
+            <img src="teaser/img/arrow.png" alt="arrow">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="menu menu__footer">
+      <img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ">
+
+      <ul class="menu__items">
+        <li class="menu__item">
+          О нас
+        </li>
+        <li class="menu__item">
+          Фото
+        <li class="menu__item">
+          Альбомы
+        </li>
+        <li class="menu__item">
+          Отзывы
+        </li>
+        <li class="menu__item">
+          Заказать
+        </li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,38 @@
+.menu {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 32px;
+
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.menu__items {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu__item {
+  font-weight: 600;
+}
+
+.menu__item:last-child {
+
+  background: #FFFFFF;
+  border: 3px solid #000000;
+
+  box-shadow: 10px 10px 0 #000000;
+  border-radius: 6px;
+
+  padding: 8px 16px;
+}
+
+.menu__footer {
+  background: #EAB8BB;
+}

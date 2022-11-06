@@ -1,0 +1,38 @@
+.team__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team__left > img {
+  max-width: 505px;
+}
+
+.team__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 567px;
+}
+
+.team__right > h2 {
+  font-weight: 600;
+  line-height: 100%;
+  font-size: 48px;
+}
+.team__block {
+  display: block;
+}
+
+.team__text-underline {
+  text-decoration: underline;
+}
+
+.team__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,36 @@
+.photo__items {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo__right > img {
+  max-width: 574px;
+}
+
+.photo__left > h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+}
+
+.photo__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.photo__price {
+  font-weight: 600;
+}
+
+.photo__texts p {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__order {
+  max-width: 278px;
+}

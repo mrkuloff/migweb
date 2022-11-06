@@ -1,0 +1,56 @@
+@import 'global_styles.css';
+@import "normalize.css";
+@import "/menu/menu.css";
+@import '/teaser/teaser.css';
+@import "/team/team.css";
+@import "/work/work.css";
+@import "/assortment/assortment.css";
+@import "/orders/orders.css";
+@import "/orders/itc-slider.css";
+@import "/cheaper/cheaper.css";
+@import "/photo/photo.css";
+
+@font-face {
+  font-family: 'Bw Modelica';
+  src: local('BwModelicaCyrillicDEMO-Black'), local('BwModelicaCyrillicDEMO-Black'),
+  url('/font/BwModelicaCyrillicDEMO-Black.woff') format('woff');
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bw Modelica';
+  src: local('BwModelicaCyrillicDEMO-ExtraBold'), local('BwModelicaCyrillicDEMO-ExtraBold'),
+  url('/font/BwModelicaCyrillicDEMO-ExtraBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bw Modelica';
+  src: local('BwModelicaCyrillicDEMO-Bold'), local('BwModelicaCyrillicDEMO-Bold'),
+  url('/font/BwModelicaCyrillicDEMO-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bw Modelica';
+  src: local('BwModelicaCyrillicDEMO-Medium'), local('BwModelicaCyrillicDEMO-Medium'),
+  url('/font/BwModelicaCyrillicDEMO-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bw Modelica';
+  src: local('BwModelicaCyrillicDEMO-Regular'), local('BwModelicaCyrillicDEMO-Regular'),
+  url('/font/BwModelicaCyrillicDEMO-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}

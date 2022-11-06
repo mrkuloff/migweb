@@ -1,0 +1,40 @@
+.orders__slider {
+  max-width: 700px;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7rem;
+}
+
+.orders__items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.orders__h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  /* or 48px */
+
+  text-align: center;
+  letter-spacing: -0.06em;
+  margin-bottom: 35px;
+}
+
+.orders__reviews {
+  max-width: 487px;
+}
