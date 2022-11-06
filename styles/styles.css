@@ -1,14 +1,14 @@
 @import 'global_styles.css';
 @import "normalize.css";
-@import "/menu/menu.css";
-@import '/teaser/teaser.css';
-@import "/team/team.css";
-@import "/work/work.css";
-@import "/assortment/assortment.css";
-@import "/orders/orders.css";
-@import "/orders/itc-slider.css";
-@import "/cheaper/cheaper.css";
-@import "/photo/photo.css";
+@import "../menu/menu.css";
+@import '../teaser/teaser.css';
+@import "../team/team.css";
+@import "../work/work.css";
+@import "../assortment/assortment.css";
+@import "../orders/orders.css";
+@import "../orders/itc-slider.css";
+@import "../cheaper/cheaper.css";
+@import "../photo/photo.css";
 
 @font-face {
   font-family: 'Bw Modelica';
