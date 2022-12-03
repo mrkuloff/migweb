@@ -1,7 +1,7 @@
 @import 'global_styles.css';
 @import "normalize.css";
 @import "../menu/menu.css";
-@import '../teaser/teaser.css';
+@import '../header/header.css';
 @import "../team/team.css";
 @import "../work/work.css";
 @import "../assortment/assortment.css";

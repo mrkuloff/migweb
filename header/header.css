@@ -1,10 +1,10 @@
-.teaser__items {
+.header__items {
   display: inline-flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-.teaser__texts > h1 {
+.header__texts > h1 {
   font-weight: 800;
   font-size: 80px;
   line-height: 100%;
@@ -12,19 +12,19 @@
   max-width: 653px;
 }
 
-.teaser__texts {
+.header__texts {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
 
-.teaser__left {
+.header__left {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.teaser__order {
+.header__order {
   max-width: 158px;
 
   background: #FFFFFF;
@@ -37,6 +37,6 @@
   padding: 8px 10px;
 }
 
-.teaser__right img {
+.header__right img {
   max-width: 610px;
 }
