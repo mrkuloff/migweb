@@ -8,22 +8,24 @@ footer {
 
   padding-left: 80px;
   padding-right: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   position: relative;
+  z-index: 10;
 }
 
+
+
 .menu__items {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu__item {
   font-weight: 600;
 }
+
 
 .menu__item:last-child {
 
@@ -39,3 +41,20 @@ footer {
 .menu__footer {
   background: #EAB8BB;
 }
+
+.menu__item:last-child:hover {
+  background: #EAEEF1;
+}
+
+.menu__item:last-child:active {
+  background: #EAEEF1;
+}
+
+.menu__item:last-child:focus {
+  background: #EAEEF1;
+}
+
+.menu__item:last-child:checked {
+  background: #EAEEF1;
+}
+

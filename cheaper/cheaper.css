@@ -4,3 +4,17 @@
   line-height: 61px;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .cheaper__text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cheaper__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

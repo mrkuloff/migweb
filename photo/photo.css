@@ -1,12 +1,12 @@
 .photo__items {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .photo__right > img {
-  max-width: 574px;
+  flex-basis: 574px;
 }
 
 .photo__left > h2 {
@@ -32,5 +32,11 @@
 }
 
 .photo__order {
-  max-width: 278px;
+  max-width: 370px;
+}
+
+@media (max-width: 615px) {
+  .photo__right > img {
+    flex-basis: 300px;
+  }
 }

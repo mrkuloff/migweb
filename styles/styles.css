@@ -6,9 +6,10 @@
 @import "../work/work.css";
 @import "../assortment/assortment.css";
 @import "../orders/orders.css";
-@import "../orders/itc-slider.css";
 @import "../cheaper/cheaper.css";
 @import "../photo/photo.css";
+@import "../footer/footer.css";
+@import "../question/question.css";
 
 @font-face {
   font-family: 'Bw Modelica';

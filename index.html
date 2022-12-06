@@ -13,27 +13,63 @@
   <link rel="preload" href="font/BwModelicaCyrillicDEMO-Bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="font/BwModelicaCyrillicDEMO-Medium.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="font/BwModelicaCyrillicDEMO-Regular.woff" as="font" type="font/woff" crossorigin>
-  <script src="orders/itc-slider.js" defer></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(91516656, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/91516656" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
 </head>
 <body>
   <header>
-    <section class="menu">
-        <img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ">
-
+    <section class="menu" id="top_nav">
         <ul class="menu__items">
           <li class="menu__item">
-            О нас
+            <a href="https://t.me/migpic_bot"><img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ"></a>
           </li>
           <li class="menu__item">
-            Фото
-          <li class="menu__item">
-            Альбомы
+            <a href="#about">О нас</a>
           </li>
           <li class="menu__item">
-            Отзывы
+            <a href="#photo">Фото</a>
+          <li class="menu__item">
+            <a href="#album">Фотокнига</a>
           </li>
           <li class="menu__item">
-            Заказать
+            <a href="#question">Вопросы</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://t.me/migpic_bot">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg width="16px" height="16px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                <title>МИГ бот</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+                  <linearGradient x1="50%" y1="0%" x2="50%" y2="99.2583404%" id="linearGradient-1">
+                    <stop stop-color="#2AABEE" offset="0%"></stop>
+                    <stop stop-color="#229ED9" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <circle id="Oval" fill="url(#linearGradient-1)" cx="500" cy="500" r="500"></circle>
+                  <path d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z" id="Path-3" fill="#FFFFFF"></path>
+                </g>
+              </svg>
+
+              Отправить фото в МИГ</a>
           </li>
         </ul>
     </section>
@@ -44,19 +80,37 @@
         <div class="header__items">
           <div class="header__left">
             <div class="header__texts">
-              <h1>
+              <h1 class="header__texts-h1">
                 Сервис по отправке фото родным и близким
               </h1>
               <p class="header__text">
                 Подари настоящие и искренние чувства!
               </p>
             </div>
-            <button class="header__order">
-              <span>
+            <form action="https://t.me/migpic_bot">
+              <button class="header__order" >
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="16px" height="16px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                  <title>МИГ бот</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.2583404%" id="linearGradient-1">
+                      <stop stop-color="#2AABEE" offset="0%"></stop>
+                      <stop stop-color="#229ED9" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="500" cy="500" r="500"></circle>
+                    <path d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z" id="Path-3" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+                <span>
                 Заказать
               </span>
-              <img src="header/img/arrow.png" alt="arrow">
-            </button>
+                <img src="header/img/arrow.png" alt="arrow">
+              </button>
+            </form>
           </div>
           <div class="header__right">
             <img src="header/img/group.png" alt="photo">
@@ -64,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="about">
       <div class="container">
         <div class="team__items">
           <div class="team__left">
@@ -126,52 +180,8 @@
     <section class="assortment">
       <div class="container">
         <div class="assortment__items">
-          <a href="https://vk.com/mlgchat"><img src="assortment/img/photo.png" alt="Фото"></a>
-          <a href="https://vk.com/mlgchat"><img src="assortment/img/album.png" alt="Альбом"></a>
-        </div>
-      </div>
-    </section>
-    <section class="orders">
-      <div class="container">
-        <div class="orders__items">
-          <div class="orders__slider">
-            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-              <div class="itc-slider__wrapper">
-                <div class="itc-slider__items">
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8770.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8790.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8774.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8767.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8877.png" alt="Фото">
-                  </div>
-                </div>
-              </div>
-              <button class="itc-slider__btn itc-slider__btn_prev"></button>
-              <button class="itc-slider__btn itc-slider__btn_next"></button>
-              <ol class="itc-slider__indicators">
-                <li class="itc-slider__indicator" data-slide-to="0"></li>
-                <li class="itc-slider__indicator" data-slide-to="1"></li>
-                <li class="itc-slider__indicator" data-slide-to="2"></li>
-                <li class="itc-slider__indicator" data-slide-to="3"></li>
-                <li class="itc-slider__indicator" data-slide-to="4"></li>
-              </ol>
-            </div>
-          </div>
-          <button class="teaser__order">
-              <span>
-                Заказать
-              </span>
-            <img src="header/img/arrow.png" alt="arrow">
-          </button>
+          <a href="#photo"><img src="assortment/img/photo.png" alt="Фото"></a>
+          <a href="#album"><img src="assortment/img/album.png" alt="Альбом"></a>
         </div>
       </div>
     </section>
@@ -182,7 +192,7 @@
         </h2>
       </div>
     </section>
-    <section class="photo">
+    <section class="photo" id="photo">
       <div class="container">
         <div class="photo__items">
           <div class="photo__left">
@@ -211,12 +221,30 @@
               </span>
               </p>
             </div>
-            <button class="teaser__order photo__order">
-              <span>
-                Клик и фото уже в пути
-              </span>
-              <img src="header/img/arrow.png" alt="arrow">
-            </button>
+            <form action="https://t.me/migpic_bot">
+              <button class="header__order photo__order" href="https://t.me/migpic_bot">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="16px" height="16px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                  <title>МИГ бот</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.2583404%" id="linearGradient-1">
+                      <stop stop-color="#2AABEE" offset="0%"></stop>
+                      <stop stop-color="#229ED9" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="500" cy="500" r="500"></circle>
+                    <path d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z" id="Path-3" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+                <span>
+                  Клик и фото уже в пути
+                </span>
+                <img src="header/img/arrow.png" alt="arrow">
+              </button>
+            </form>
           </div>
           <div class="photo__right">
             <img src="photo/img/ph.png" alt="Фото">
@@ -224,7 +252,7 @@
         </div>
       </div>
     </section>
-    <section class="photo">
+    <section class="photo" id="album">
       <div class="container">
         <div class="photo__items">
           <div class="photo__right">
@@ -232,7 +260,7 @@
           </div>
           <div class="photo__left">
             <h2>
-              О качестве фото
+              О качестве фотокниги
             </h2>
             <p class="photo__price">
               150/руб за 1 разворот (от 12 разворотов)
@@ -253,12 +281,30 @@
               </span>
               </p>
             </div>
-            <button class="teaser__order photo__order">
-              <span>
+            <form action="https://t.me/migpic_bot">
+              <button class="header__order photo__order" href="https://t.me/migpic_bot">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="16px" height="16px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                  <title>МИГ бот</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.2583404%" id="linearGradient-1">
+                      <stop stop-color="#2AABEE" offset="0%"></stop>
+                      <stop stop-color="#229ED9" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="500" cy="500" r="500"></circle>
+                    <path d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z" id="Path-3" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+                <span>
                 Хочу порадовать себя и близких!
               </span>
-              <img src="header/img/arrow.png" alt="arrow">
-            </button>
+                <img src="header/img/arrow.png" alt="arrow">
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -272,68 +318,108 @@
     </section>
     <section class="orders">
       <div class="container">
-        <h2 class="orders__h2">Отзывы</h2>
         <div class="orders__items">
-          <div class="orders__slider">
-            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-              <div class="itc-slider__wrapper">
-                <div class="itc-slider__items">
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8770.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8790.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8774.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8767.png" alt="Фото">
-                  </div>
-                  <div class="itc-slider__item">
-                    <img src="orders/img/IMG_8877.png" alt="Фото">
-                  </div>
-                </div>
-              </div>
-              <button class="itc-slider__btn itc-slider__btn_prev"></button>
-              <button class="itc-slider__btn itc-slider__btn_next"></button>
-              <ol class="itc-slider__indicators">
-                <li class="itc-slider__indicator" data-slide-to="0"></li>
-                <li class="itc-slider__indicator" data-slide-to="1"></li>
-                <li class="itc-slider__indicator" data-slide-to="2"></li>
-                <li class="itc-slider__indicator" data-slide-to="3"></li>
-                <li class="itc-slider__indicator" data-slide-to="4"></li>
-              </ol>
+          <div class="orders__list">
+            <div class="orders__item">
+              <img src="orders/img/IMG_8770.png" alt="Фото">
+            </div>
+            <div class="orders__item">
+              <img src="orders/img/IMG_8790.png" alt="Фото">
+            </div>
+            <div class="orders__item">
+              <img src="orders/img/IMG_8774.png" alt="Фото">
+            </div>
+            <div class="orders__item">
+              <img src="orders/img/IMG_8767.png" alt="Фото">
+            </div>
+            <div class="orders__item">
+              <img src="orders/img/IMG_8877.png" alt="Фото">
             </div>
           </div>
-          <button class="teaser__order orders__reviews">
-              <span>
-                Убедили, заказываю
-              </span>
-            <img src="header/img/arrow.png" alt="arrow">
-          </button>
+        </div>
+      </div>
+    </section>
+    <section class="question" id="question">
+      <div class="container">
+        <h2 class="question__h2">Вопросы</h2>
+        <div class="question__items">
+          <p>
+            <span class="question__tittle">- Как собрать свою фотокнигу или распечатать фотографии?</span>
+
+            <span class="question__answer">Перейдите в нашего чат-бота в телеграмме, загрузите фотографии, при необходимости добавьте подписи - всё! Ваш заказ уже обрабатывается.
+            </span>
+            <span class="question__tittle">
+            - Изменение / отмена заказа.
+            </span>
+            <span class="question__answer">
+            Мы сможем отменить ваш заказ, если он еще не в печати — напишите нашей онлайн-поддержке и она проверит статус заказа. Если вам нужно внести изменения в макет, сделайте это также через поддержку.
+
+            Если заказ в печати, приостановить ее и отменить печать ваших фотографий, увы, не получится. Мы советуем внимательно проверять фото перед отправкой в печать — чтобы избежать ошибок.
+            </span>
+            <span class="question__tittle">
+            - Информация о доставке.
+            </span>
+            <span class="question__answer">
+            Все уведомления по статусу заказа мы отправляем на ваш email, а также в смс. Вы получите сообщение о передаче заказа в курьерскую службу с трек-номером. Если Вы вдруг не получаете сообщения, свяжитесь с нами  — мы подскажем статус!
+            </span>
+            <span class="question__tittle">
+            - Сроки печати и доставки.
+            </span>
+            <span class="question__answer">
+            Все продукты печатаются в фиксированные и минимальные сроки, быстрее напечатать фотокнигу или снимки мы не сможем, потому что в таком случае может пострадать качество заказа. Мы печатаем заказы в будние и в выходные дни.
+
+            Сроки печати:
+
+            Фотокниги — 2-3 рабочих дня.
+            Фотографии — 1 рабочий день.
+
+            Сроки указаны без учета доставки. Доставка по Москве занимает 1-2 рабочих дня, в Санкт-Петербург 2-3 рабочих дня, в другие города — от 4-х рабочих дней.
+            </span>
+            <span class="question__tittle">
+            - Мы можем быть уверены в качестве фотокниг?
+            </span><span class="question__answer">
+            Фотокниги, похожи на классические книги, где листы, с двусторонней печатью без ламинации собираются в блок, при этом в книгу может вместиться до 160 страниц, то есть 80 листов. Печать цифровая, на HP Indigo 20000. Бумага мелованная, с привычной текстурой. Блоки супер качественные, собираются на единственной в России линии KOLBUS KM200.
+            </span>
+          </p>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <section class="menu menu__footer">
-      <img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ">
+    <section class="footer">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <img class="menu__img" src="./menu/img/МИГ.png" alt="МИГ">
+        </li>
+        <li class="footer__item footer__item-background">
+          <a href="https://vk.com/migpic">
+            <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 23.04C0 12.1788 0 6.74826 3.37413 3.37413C6.74826 0 12.1788 0 23.04 0H24.96C35.8212 0 41.2517 0 44.6259 3.37413C48 6.74826 48 12.1788 48 23.04V24.96C48 35.8212 48 41.2517 44.6259 44.6259C41.2517 48 35.8212 48 24.96 48H23.04C12.1788 48 6.74826 48 3.37413 44.6259C0 41.2517 0 35.8212 0 24.96V23.04Z" fill="#0077FF"/>
+              <path d="M25.54 34.5801C14.6 34.5801 8.3601 27.0801 8.1001 14.6001H13.5801C13.7601 23.7601 17.8 27.6401 21 28.4401V14.6001H26.1602V22.5001C29.3202 22.1601 32.6398 18.5601 33.7598 14.6001H38.9199C38.0599 19.4801 34.4599 23.0801 31.8999 24.5601C34.4599 25.7601 38.5601 28.9001 40.1201 34.5801H34.4399C33.2199 30.7801 30.1802 27.8401 26.1602 27.4401V34.5801H25.54Z" fill="white"/>
+            </svg>
 
-      <ul class="menu__items">
-        <li class="menu__item">
-          О нас
+            МИГ ВКонтакте</a>
         </li>
-        <li class="menu__item">
-          Фото
-        <li class="menu__item">
-          Альбомы
-        </li>
-        <li class="menu__item">
-          Отзывы
-        </li>
-        <li class="menu__item">
-          Заказать
+        <li class="footer__item">
+          <a href="https://t.me/migpic_bot">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="16px" height="16px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+              <title>МИГ бот</title>
+              <desc>Created with Sketch.</desc>
+              <defs>
+                <linearGradient x1="50%" y1="0%" x2="50%" y2="99.2583404%" id="linearGradient-1">
+                  <stop stop-color="#2AABEE" offset="0%"></stop>
+                  <stop stop-color="#229ED9" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="500" cy="500" r="500"></circle>
+                <path d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z" id="Path-3" fill="#FFFFFF"></path>
+              </g>
+            </svg>
+
+            Отправить фото в МИГ</a>
         </li>
       </ul>
     </section>
