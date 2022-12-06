@@ -1,15 +1,15 @@
 @import 'global_styles.css';
 @import "normalize.css";
-@import "../menu/menu.css";
-@import '../header/header.css';
-@import "../team/team.css";
-@import "../work/work.css";
-@import "../assortment/assortment.css";
-@import "../orders/orders.css";
-@import "../cheaper/cheaper.css";
-@import "../photo/photo.css";
-@import "../footer/footer.css";
-@import "../question/question.css";
+@import "/menu/menu.css";
+@import '/header/header.css';
+@import "/team/team.css";
+@import "/work/work.css";
+@import "/assortment/assortment.css";
+@import "/orders/orders.css";
+@import "/cheaper/cheaper.css";
+@import "/photo/photo.css";
+@import "/footer/footer.css";
+@import "/question/question.css";
 
 @font-face {
   font-family: 'Bw Modelica';
